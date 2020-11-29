@@ -1,0 +1,258 @@
+:root{
+    --color-one : #3F3D56;
+    --color-two: #363636;
+    --color-white: #FFF;
+    --font-cera-gr: 'Cera GR Black';
+    --font-questrial: Questrial;
+    --font-roboto: Roboto;
+}
+@font-face{
+    font-family: 'Cera GR Black';
+    src: url(../fonts/Cera_GR_Black.ttf);
+}
+@font-face{
+    font-family: Questrial;
+    src: url(../fonts/Questrial-Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* start classes template */
+
+a{
+    text-decoration: none;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.paragraph{
+    font-family: var(--font-questrial);
+    font-size: 18px;
+}
+h1.title{
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--color-two);
+    font-family: var(--font-roboto);
+    font-weight: bold;
+}
+h4.subtitle{
+    padding: 10px 0 10px;
+    text-align: left;
+    text-transform: capitalize;
+    color: var(--color-two);
+    font-family: var(--font-roboto);
+    font-weight: bold;
+}
+body{
+    overflow-x: hidden;
+}
+.clear{
+    clear: both;
+}
+.button-violet{
+    /* properties of element */
+    border-radius: 20px;
+    padding: 12px 24px 12px;
+    margin: 0 10px 0;
+    background-color: var(--color-one);
+
+    /* properties of text inside */
+    font-family: var(--font-questrial);
+    color: var(--color-white);
+    text-transform: capitalize;
+}
+section{
+    margin-bottom: 75px;
+}
+.f-left{
+    float: left;
+}
+.f-right{
+    float: right;
+}
+/* end classes template */
+#left-leaves{
+    width: 18%;
+    height: auto;
+    position: relative;
+    left: -140px;
+    top: 50px;
+}
+#right-leaves{
+    position: relative;
+    width: 26%;
+    top: -500px;
+    right: -200px;
+}
+#leaves-1{
+    width: 25%;
+    height: auto;
+    position: relative;
+    right: -190px;
+    top: -700px;
+}
+#leaves{
+    position: relative;
+    width: 25%;
+    top: -50px;
+    left: -220px;
+}
+#last-leaves{
+    width: 15%;
+    position: relative;
+    left: -585px;
+    top: 50px;
+}
+#illustration-one{
+    top: -230px;
+    right: -220px;
+    position: absolute;
+    width: 70%;
+    height: auto;
+}
+#illustration-two{
+    width: 60%;
+    position: absolute;
+    top: 450vh;
+    right: -250px;
+}
+nav{
+    position: relative;
+    padding: 20px 0 20px;
+}
+nav #nav-links{
+    list-style-type: none;
+}
+nav #nav-links > li{
+    margin: 20px 15px 0;
+    display: inline-block;
+}
+nav #nav-links > li a{
+    text-transform: capitalize;
+    font-family: var(--font-questrial);
+    font-size: 15px;
+    color: var(--color-two);
+}
+nav #nav-links > li.active a{
+    /* properties of element */
+    border-radius: 20px;
+    padding: 12px 24px 12px;
+    background-color: var(--color-one);
+
+    /* properties of text inside */
+    color: var(--color-white);
+}
+nav #logo{
+    /* properties of element */
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(20deg, #54B192, #1CE39F);
+    border-radius: 30px;
+
+    /* properties of text inside */
+    font-family: var(--font-cera-gr);
+    color: var(--color-one);
+    font-size: 29px;
+    line-height: 55px;
+    text-align: center;  
+}
+header{
+    padding-top: 15%;
+    padding-left: 10px;
+}
+header #info h1{
+    margin: 10px 5px 10px;
+    text-transform: capitalize;
+    font-family: var(--font-roboto);
+    color: var(--color-two);
+}
+header #info p{
+    color: var(--color-two);
+    margin: 25px 10px 40px;
+    line-height: 23px;
+    letter-spacing: 2px;
+    width: 35%;
+    font-family: var(--font-questrial);
+    font-size: 1.1rem;
+}
+header .social-links{
+    
+    margin-top: 75px;
+    list-style-type: none;
+}
+header .social-links li{
+    font-size: 22px;
+    margin: 10px;
+    display: inline-block;
+}
+header .social-links li a{
+    color: var(--color-one);
+}
+#things-i-do .thing{
+    margin: 30px;
+    width: 100%;
+    display: block;
+}
+#things-i-do .thing img{
+    margin: 30px;
+    width: 40%;
+    height: auto;
+}
+#things-i-do .thing .info{
+    margin: 30px;
+    padding: 50px;
+    width: 35%;
+}
+#things-i-do .thing .info .paragraph{
+    line-height: 24px;
+}
+#recent-work{
+    display: block;
+}
+#recent-work{
+    margin-bottom: 120px;
+    width: 100%;
+}
+#recent-work .column{
+    margin-top: 100px;
+    padding: 10px;
+    display: inline-block;
+    width: 28%;
+}
+#recent-work .column:nth-of-type(1){
+    margin-top: 150px;
+}
+#recent-work .column img{
+    margin: 0px 0px 20px;
+    width: 106%;
+    display: block;
+}
+#recent-work a.button-violet{
+    text-align: center;
+}
+#recent-work #view-work-link{
+    text-align: center;
+}
+footer .info *{
+    margin: 50px 0 50px ;
+}
+footer .info h1{
+    text-align: start;
+    width: 350px;
+}
+footer .social-links{
+    margin-top: 50px;
+    list-style-type: none;
+}
+footer .social-links li{
+    font-size: 22px;
+    margin: 10px;
+    display: inline-block;
+}
+footer .social-links li a{
+    color: var(--color-one);
+}
